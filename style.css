@@ -2,12 +2,6 @@
     --character-section: hsl(210, 13%, 50%);
 }
 
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -71,16 +65,16 @@ ul {
     color: white;
 }
 
-.hero-text>p {
+.hero-text p {
     font-size: 18px;
     color: white;
 }
 
-.img-content>img {
+.img-content img {
     width: 500px;
 }
 
-.hero-text>button {
+.hero-text button {
     width: 100px;
     height: 35px;
     border-radius: 10px;
@@ -89,7 +83,7 @@ ul {
     border-color: #3882F6;
 }
 
-.info-content>h2 {
+.info-content h2 {
     text-align: center;
     color: #1F2937;
     font-weight: 800;
@@ -135,18 +129,21 @@ ul {
 }
 
 .character-section {
-    background-color: 'slate';
-    height: 70vh;
+    height: 50vh;
+    position: relative;
 }
 
 .character-section img {
     height: 50vh;
     max-width: 500px;
-    object-fit: cover;
+    align-self: flex-end;
 }
 
 .character-text {
     max-width: 550px;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
 }
 
 .image-container {
@@ -170,17 +167,48 @@ a:visited {
     color: white;
 }
 
-.section {
+.content {
     display: flex;
-    justify-content: space-around;
-    gap: 40px;
+    justify-content: center;
+    gap: 50px;
+}
+
+.background-blur {
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(7px);
+}
+
+#dick-section {
+    background-image: url('/images/bg/bludhaven.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#jason-section {
+    background-image: url('/images/bg/jason.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#tim-section {
+    background-image: url('/images/bg/tim.png');
+    background-position: center;
+    background-size: cover;
+}
+
+#damian-section {
+    background-image: url('/images/bg/damian.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
 footer {
+    padding-top: 20px;
+    height: 100px;
     background: #1F2937;
-    height: 80px;
     color: white;
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
 }
