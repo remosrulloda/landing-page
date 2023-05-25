@@ -1,4 +1,6 @@
-:root {}
+:root {
+    --character-section: hsl(210, 13%, 50%);
+}
 
 html {
     scroll-behavior: smooth;
@@ -9,17 +11,6 @@ body {
     margin: 0;
 }
 
-li {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-    color: #E5E7EB;
-    font-size: 16px;
-}
-
-
 h2 {
     font-size: 48px;
 }
@@ -28,10 +19,6 @@ h2 {
     font-size: 24px;
     color: #F9FAF8;
     font-weight: 700;
-}
-
-.header {
-    background-color: #1F2937;
 }
 
 .section {
@@ -53,7 +40,9 @@ ul {
 }
 
 .hero-section {
-    background-color: #1F2937;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)) no-repeat fixed,
+        url(images/header-background.jpeg) no-repeat center center fixed;
+    background-size: cover;
 }
 
 .hero-content {
@@ -96,7 +85,6 @@ ul {
 
 .info-content>h2 {
     text-align: center;
-    font-size: 36px;
     color: #1F2937;
     font-weight: 800;
     flex-shrink: 0;
@@ -106,12 +94,15 @@ ul {
     display: flex;
     flex-direction: column;
     margin-bottom: 100px;
+    height: 50vh;
+    justify-content: center;
+    gap: 60px;
 }
 
 .info-images {
     display: flex;
     padding: 20px;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-shrink: 0;
     gap: 10px;
 }
@@ -136,6 +127,12 @@ ul {
     height: 234px;
     object-fit: cover;
 }
+
+.character-section {
+    background-color: 'slate';
+    height: 100vh;
+}
+
 
 footer {
     background: #1F2937;
