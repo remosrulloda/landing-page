@@ -1,7 +1,3 @@
-:root {
-    --character-section: hsl(210, 13%, 50%);
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -11,32 +7,127 @@ body {
     margin: 0;
 }
 
-h2 {
-    font-size: 48px;
-}
-
 .logo {
-    font-size: 24px;
+    font-size: 30px;
     color: #F9FAF8;
     font-weight: 700;
+    margin-bottom: 40px;
 }
 
-.margin {
-    margin-left: 300px;
-    margin-right: 300px;
+@media(orientation:portrait) {
+    p {
+        font-size: 20px;
+    }
+
+    h1,
+    h2 {
+        font-size: 40px;
+        color: white;
+    }
+
+    .margin {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .hero-section {
+        padding-top: 20px;
+    }
+
+    .hero-content {
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .hero-content img {
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .info-box img {
+        width: 400px;
+        height: 600px;
+    }
+
+    .character-text p {
+        font-size: 18px;
+    }
+
+    .character-section img {
+        height: 600px;
+        max-width: 500px;
+    }
+
+    .character-text {
+        max-width: 550px;
+        padding: 10px;
+    }
+
+    .info-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
-.header-content {
-    padding-top: 16px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-ul {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+@media(orientation:landscape) {
+    p {
+        font-size: 20px;
+    }
+
+    h1,
+    h2 {
+        font-size: 40px;
+        color: white;
+    }
+
+    .margin {
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+
+    .hero-section {
+        padding-top: 20px;
+    }
+
+    .hero-content {
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .hero-content img {
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .info-box img {
+        width: 200px;
+        height: 300px;
+    }
+
+    .character-text p {
+        font-size: 18px;
+    }
+
+    .character-section img {
+        height: 600px;
+        max-width: 500px;
+    }
+
+    .character-text {
+        max-width: 550px;
+        padding: 10px;
+    }
+
+    .info-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 .hero-section {
@@ -45,66 +136,24 @@ ul {
     background-size: cover;
 }
 
-.hero-content {
-    padding-top: 50px;
-    display: flex;
-    gap: 150px;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 120px;
-}
-
 .hero-text {
     display: flex;
     flex-direction: column;
-}
-
-.hero-text>h1 {
-    font-size: 48px;
-    font-weight: 800;
     color: white;
-}
-
-.hero-text p {
-    font-size: 18px;
-    color: white;
-}
-
-.img-content img {
-    width: 500px;
-}
-
-.hero-text button {
-    width: 100px;
-    height: 35px;
-    border-radius: 10px;
-    color: white;
-    background: #3882F6;
-    border-color: #3882F6;
 }
 
 .info-content h2 {
     text-align: center;
     color: #1F2937;
     font-weight: 800;
-    flex-shrink: 0;
-}
-
-.info-content {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 100px;
-    height: 50vh;
-    justify-content: center;
-    gap: 60px;
 }
 
 .info-images {
+    margin: 20px 0 20px 0;
     display: flex;
-    padding: 20px;
     justify-content: space-around;
     flex-shrink: 0;
-    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .info-box {
@@ -120,45 +169,19 @@ ul {
 .info-box img {
     border: 3px solid #3882F6;
     border-radius: 12px;
-}
-
-.info-box img {
-    width: 150px;
-    height: 234px;
     object-fit: cover;
 }
 
 .character-section {
-    height: 50vh;
     position: relative;
 }
 
 .character-section img {
-    height: 50vh;
-    max-width: 500px;
-    align-self: flex-end;
+    align-self: center;
 }
 
 .character-text {
-    max-width: 550px;
     color: white;
-    font-size: 18px;
-    padding: 10px;
-}
-
-.image-container {
-    position: relative;
-    display: inline-block;
-}
-
-.image-attrib {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 0 .5em .5em 0;
-    padding: .25em;
-    color: white;
-    background-color: rgba(0, 0, 0, .2);
 }
 
 a,
@@ -171,6 +194,7 @@ a:visited {
     display: flex;
     justify-content: center;
     gap: 50px;
+    padding: 10px;
 }
 
 .background-blur {
