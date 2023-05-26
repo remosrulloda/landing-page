@@ -97,6 +97,7 @@ body {
         padding-bottom: 50px;
         display: flex;
         flex-direction: row-reverse;
+        justify-content: space-between;
     }
 
     .hero-content img {
